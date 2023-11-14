@@ -6,68 +6,92 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\{{scheme-slug}}]
 
 ; Default Foreground
+; base05 #{{base05-hex}}
 "Colour0"="{{base05-rgb-r}},{{base05-rgb-g}},{{base05-rgb-b}}"
 
 ; Default Bold Foreground  -- equals to non-bold
+; base05 #{{base05-hex}}
 "Colour1"="{{base05-rgb-r}},{{base05-rgb-g}},{{base05-rgb-b}}"
 
 ; Default Background
+; base00 #{{base00-hex}}
 "Colour2"="{{base00-rgb-r}},{{base00-rgb-g}},{{base00-rgb-b}}"
 
 ; Default Bold Background  -- equals to non-bold
+; base00 #{{base00-hex}}
 "Colour3"="{{base00-rgb-r}},{{base00-rgb-g}},{{base00-rgb-b}}"
 
 ; Cursor Text -- equals to default background
+; base00 #{{base00-hex}}
 "Colour4"="{{base00-rgb-r}},{{base00-rgb-g}},{{base00-rgb-b}}"
 
 ; Cursor Colour -- equals to default foreground
+; base05 #{{base05-hex}}
 "Colour5"="{{base05-rgb-r}},{{base05-rgb-g}},{{base05-rgb-b}}"
 
 ; ANSI Black
+; base00 #{{base00-hex}}
 "Colour6"="{{base00-rgb-r}},{{base00-rgb-g}},{{base00-rgb-b}}"
 
 ; ANSI Black Bold
+; base03 #{{base03-hex}}
 "Colour7"="{{base03-rgb-r}},{{base03-rgb-g}},{{base03-rgb-b}}"
 
 ; ANSI Red
+; base08 #{{base08-hex}}
 "Colour8"="{{base08-rgb-r}},{{base08-rgb-g}},{{base08-rgb-b}}"
 
 ; ANSI Red Bold
+; base09 #{{base09-hex}}
 "Colour9"="{{base09-rgb-r}},{{base09-rgb-g}},{{base09-rgb-b}}"
 
 ; ANSI Green
+; base0B #{{base0B-hex}}
 "Colour10"="{{base0B-rgb-r}},{{base0B-rgb-g}},{{base0B-rgb-b}}"
 
 ; ANSI Green Bold
-"Colour11"="{{base01-rgb-r}},{{base01-rgb-g}},{{base01-rgb-b}}"
+; base01 #{{base01-hex}}
+; FIXME I think this should be base0C (which dupes another one) or also be same as green base0B (same approach for how Foreground and Bold is handled)
+;"Colour11"="{{base01-rgb-r}},{{base01-rgb-g}},{{base01-rgb-b}}"
+; base0B #{{base0B-hex}}
+"Colour11"="{{base0B-rgb-r}},{{base0B-rgb-g}},{{base0B-rgb-b}}"
 
 ; ANSI Yellow
+; base0A #{{base0A-hex}}
 "Colour12"="{{base0A-rgb-r}},{{base0A-rgb-g}},{{base0A-rgb-b}}"
 
 ; ANSI Yellow Bold
+; base02 #{{base02-hex}}
 "Colour13"="{{base02-rgb-r}},{{base02-rgb-g}},{{base02-rgb-b}}"
 
 ; ANSI Blue
+; base0D #{{base0D-hex}}
 "Colour14"="{{base0D-rgb-r}},{{base0D-rgb-g}},{{base0D-rgb-b}}"
 
 ; ANSI Blue Bold
+; base04 #{{base04-hex}}
 "Colour15"="{{base04-rgb-r}},{{base04-rgb-g}},{{base04-rgb-b}}"
 
 ; ANSI Magenta
+; base0E #{{base0E-hex}}
 "Colour16"="{{base0E-rgb-r}},{{base0E-rgb-g}},{{base0E-rgb-b}}"
 
 ; ANSI Magenta Bold
+; #{{base06-hex}}
 "Colour17"="{{base06-rgb-r}},{{base06-rgb-g}},{{base06-rgb-b}}"
 
 ; ANSI Cyan
+; base0C #{{base0C-hex}}
 "Colour18"="{{base0C-rgb-r}},{{base0C-rgb-g}},{{base0C-rgb-b}}"
 
 ; ANSI Cyan Bold
+; base0F #{{base0F-hex}}
 "Colour19"="{{base0F-rgb-r}},{{base0F-rgb-g}},{{base0F-rgb-b}}"
 
 ; ANSI White
+; base05 #{{base05-hex}}
 "Colour20"="{{base05-rgb-r}},{{base05-rgb-g}},{{base05-rgb-b}}"
 
 ; ANSI White Bold
+; base07 {{base07-hex}}
 "Colour21"="{{base07-rgb-r}},{{base07-rgb-g}},{{base07-rgb-b}}"
-
